@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>翻訳ツール | HTML5 Tools</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://html5tools.netlify.app/html5tools-title.css">
+        <link rel="stylesheet" href="https://html5tools.netlify.app/html5tools-footer.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" type="image/png" href="icon.png" id="icon">
+    </head>
+    <body>
+        <p class="center" id="catchcopy">だれでも、いつでも、Webで使えるツール集</p>
+        <a id="title" href="https://html5tools.netlify.app/">HTML5 Tools</a>
+        <p id="tooltitle" class="center">翻訳ツール</p>
+        <!-- <button id="darkModeButton"></button> -->
+        <p class="center">テキストを英語⇔日本語で翻訳できるツール。<br>（注）このツールはWebGLが動作する環境でないと動きません。</p>
+        <div id="main-content"> 
+            <div id="textarea">
+                <textarea id="inputText" placeholder="ここに翻訳したいテキストを入力" hidden></textarea>
+                <textarea id="resultText" placeholder="翻訳結果がここに表示されます" readonly hidden></textarea>
+            </div>
+            <div id="buttons">
+                <input type="button" value="英語 -&gt; 日本語" id="toJaBtn" hidden>
+                <input type="button" value="日本語 -&gt; 英語" id="toEnBtn" hidden>
+            </div>
+            <p id="loading">翻訳システムをロードしています...</p>
+        </div>
+        <iframe src="TranslateSystem/index.html" hidden id="TransSys"></iframe>
+        <footer>
+            <p>Copyright &copy; HTML5 Tools 2025 | ライセンス: Apache License 2.0 | <a href="https://x.gd/H5T_trans_src" download>ソースコードをダウンロード</a> | <a href="https://forms.gle/riqVmYtL7mRj38V29">フィードバック</a></p>
+        </footer>
+    </body>
+</html>
